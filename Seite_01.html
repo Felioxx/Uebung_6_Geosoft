@@ -37,9 +37,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-                        <a class="nav-link" href="Aufgabe05new.html">Bushaltestellen</a>
-                        <a class="nav-link" href="index.html">PointsofInterest</a>
+                        <a class="nav-link active" aria-current="page" href="Seite_01.html">Home</a>
+                        <a class="nav-link active" href="Seite_02.html">Bushaltestellen</a>
+                        <a class="nav-link active" href="Seite_03.html">PointsofInterest</a>
 
                     </div>
                 </div>
@@ -50,19 +50,15 @@
     <div id="information" class="card">
         <div class="card-body">
             <div class="a" align="center">
-                <h1>Impressum</h1>
-                <br>
-                Anschreiben<br>
-                authors: Philipp Mundinger <br> <br>
+                <h1>Seite 1</h1>
 
-                Der Betreiber der Webseite ist leider nicht zu erreichen
-                Normalerweise würden sie hier finden: <br><br>
-                1. Telefonnummer<br>
-                2. Email
+                authors: Philipp Mundinger, Felix Disselkamp <br> <br>
+                Bitte geben Sie hier den Namen Ihres POI ein und markieren Sie ihn auf der Karte.
             </div>
         </div>
     </div>
 
+    <input type="text" name="textfeld" id="textfeld"></input>
 
     <script defer src="seite1.js"></script>
 
@@ -73,36 +69,20 @@
         <textarea id="geojsontextarea"></textarea><br />
     </div>
 
+    <button id="onclickevent"> Hier klicken um die Eingabe zu bestaetigen.</button>
+    <br> <br>
+
+
+    <!-- Einbinden des Bestaetigungsfeldes-->
+    <script>
+        let element = document.getElementById("onclickevent");
+    </script>
+
     <!--Fusszeile der Webseite -->
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                <svg class="bi" width="30" height="24">
-                    <use xlink:href="#bootstrap"></use>
-                </svg>
-            </a>
-            <span class="text-muted">© 2022 Geosoftware, Philipp Mundinger</span>
+        <div class="text-muted">
+            © 2022 Geosoftware, Philipp Mundinger, Felix Disselkamp
         </div>
-
-        <div class="col-md-4 d-flex align-items-center">
-            <a href="impressum.html" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                Hier Finden sie das Impressum: Impressum
-            </a>
-
-        </div>
-
-
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-                        <use xlink:href="#twitter"></use>
-                    </svg></a></li>
-            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-                        <use xlink:href="#instagram"></use>
-                    </svg></a></li>
-            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-                        <use xlink:href="#facebook"></use>
-                    </svg></a></li>
-        </ul>
     </footer>
 </body>
 
